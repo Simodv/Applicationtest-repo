@@ -41,7 +41,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name of member"
+        android:text="Youssef Essam"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="321dp" />
