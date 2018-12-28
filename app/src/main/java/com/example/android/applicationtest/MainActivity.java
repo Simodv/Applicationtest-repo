@@ -1,5 +1,6 @@
 package com.example.android.applicationtest;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     // button2is added in layout xml file.
     private Button button2;
+    private Button buttonTahany;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,19 @@ public class MainActivity extends AppCompatActivity {
                 openActivity2();
             }
         } );
+
+     //////////////////////////////////////////////////////////////////////////
+     /*this buttuon is used to open TahanyActivity with Button_id=button3*/
+        buttonTahany=(Button)findViewById(R.id.button3);
+        ////override the listner of Button3
+        buttonTahany.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, TahanyActivity.class);
+                startActivity(i); }});
     }
+    ////////////////////////////////////////////////////////////////////////////
+
     public void openActivity2(){
         Intent intent = new Intent ( this, Activity2.class );
         startActivity(intent);
