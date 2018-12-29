@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         /* Initialise layout and button components. */
         // Initialising button 2
         button2 = (Button) findViewById ( R.id.button2 );
+// change button 7 to object
+        button7 = (Button) findViewById ( R.id.button7 );
         // Add a OnClickListener object to button2
         button2.setOnClickListener ( new View.OnClickListener () {
         /* This method is called when any of the activity's view components is clicked. */
@@ -66,25 +68,23 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent ( this, Activity2.class );
         startActivity(intent);
         // perform action for button2
-    }
 
-//Brahim bja change
-  // convert button7 to object
-button7 = (Button) findViewById ( R.id.button7 );
- // Add OnClickListener  to button7
-button7.setOnClickListener ( new View.OnClickListener () {
-        /*  method  called if clicked on Botton7. */
+        //Brahim bja change
+        // Add OnClickListener  to button7
+        button7.setOnClickListener ( new View.OnClickListener () {
+            /*  method  called if clicked on Botton7. */
             @Override
             public void onClick(View v) {
-                openActivitybrahim();
+                openAbrahim();
             }
- 
-      } );
-}
-public void openActivitybrahim(){
-        Intent intent = new Intent ( this, Activitybrahim.class );
+
+        } );
+    }
+    public void openAbrahim(){
+        Intent intent = new Intent ( this, Abrahim.class );
         startActivity(intent);
-        
+
     }
 //fin brahim change
-}
+    }
+
