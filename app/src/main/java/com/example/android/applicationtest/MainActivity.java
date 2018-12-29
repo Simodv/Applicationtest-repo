@@ -29,8 +29,10 @@ import android.widget.Button;
  */
 public class MainActivity extends AppCompatActivity {
     // button2is added in layout xml file.
+   // button7 added in layout xml file.
     private Button button2;
     private Button buttonTahany;
+    private Button button7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,4 +67,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         // perform action for button2
     }
+
+//Brahim bja change
+  // convert button7 to object
+button7 = (Button) findViewById ( R.id.button7 );
+ // Add OnClickListener  to button7
+button7.setOnClickListener ( new View.OnClickListener () {
+        /*  method  called if clicked on Botton7. */
+            @Override
+            public void onClick(View v) {
+                openActivitybrahim();
+            }
+ 
+      } );
+}
+public void openActivitybrahim(){
+        Intent intent = new Intent ( this, Activitybrahim.class );
+        startActivity(intent);
+        
+    }
+//fin brahim change
 }
