@@ -85,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    // this method is used to open yasser activity
+
+    public void yasserActivity(View view) {
+        Intent intent=new Intent(this,YasserActivity.class);
+        startActivity(intent);
+    }
 //fin brahim change
     }
 

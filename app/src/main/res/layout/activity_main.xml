@@ -75,6 +75,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="181dp"
         android:text="yasser mohamed"
+        android:onClick="yasserActivity"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="64dp" />
