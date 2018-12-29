@@ -19,7 +19,8 @@
         <activity android:name=".Activity2" />
         <activity android:name=".TahanyActivity" />
         <activity android:name=".YasserActivity" />
-        <activity android:name=".RehamActivity"></activity>
+        <activity android:name=".RehamActivity" />
+        <activity android:name=".ObidaActivity"></activity>
     </application>
 
 </manifest>

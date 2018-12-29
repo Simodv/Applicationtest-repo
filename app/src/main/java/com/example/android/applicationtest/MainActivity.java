@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonTahany;
     private Button button7;
     private Button button9;
+    private Button button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         button7 = (Button) findViewById ( R.id.button7 );
         // button identification and connection with xml.
         button9 = (Button) findViewById ( R.id.button9);
+// Obida button identification
+        button5 = (Button) findViewById(R.id.button5);
+
         // Add a OnClickListener object to button2
         button2.setOnClickListener ( new View.OnClickListener () {
         /* This method is called when any of the activity's view components is clicked. */
@@ -74,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, RehamActivity.class);
                 startActivity(intent);
 
+            }
+        });
+        //method to open ObidaActivity
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this,ObidaActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -114,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
         Intent inten = new Intent (this,RehamActivity.class);
         startActivity(inten);
     }
+
     }
 
 
