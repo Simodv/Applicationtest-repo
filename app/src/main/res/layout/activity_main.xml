@@ -111,7 +111,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="21dp"
-        android:text="Name of member"
+        android:text="Reham Mahmoud"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="417dp" />

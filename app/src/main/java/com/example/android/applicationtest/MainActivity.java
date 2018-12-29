@@ -30,9 +30,11 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     // button2is added in layout xml file.
    // button7 added in layout xml file.
+    //button9 exists in layout xml file.
     private Button button2;
     private Button buttonTahany;
     private Button button7;
+    private Button button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById ( R.id.button2 );
 // change button 7 to object
         button7 = (Button) findViewById ( R.id.button7 );
+        // button identification and connection with xml.
+        button9 = (Button) findViewById ( R.id.button9);
         // Add a OnClickListener object to button2
         button2.setOnClickListener ( new View.OnClickListener () {
         /* This method is called when any of the activity's view components is clicked. */
@@ -61,6 +65,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, TahanyActivity.class);
                 startActivity(i); }});
+
+
+        //this step to start Reham Activity
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RehamActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
     ////////////////////////////////////////////////////////////////////////////
 
@@ -93,5 +110,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 //fin brahim change
+    public void RehamActivity(){
+        Intent inten = new Intent (this,RehamActivity.class);
+        startActivity(inten);
     }
+    }
+
 
