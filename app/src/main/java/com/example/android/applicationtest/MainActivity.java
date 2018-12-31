@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
     private Button button9;
     private Button button5;
 
+    // create variable to relate it with the button in xml
+    private Button button_El_jawsagy ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
@@ -50,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         button9 = (Button) findViewById ( R.id.button9);
 // Obida button identification
         button5 = (Button) findViewById(R.id.button5);
+
+        //initialising button_El_jawsagy
+        button_El_jawsagy = (Button) findViewById(R.id.button_El_jawsagy);
+
 
         // Add a OnClickListener object to button2
         button2.setOnClickListener ( new View.OnClickListener () {
@@ -90,6 +97,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // make override to method of onclick
+        button_El_jawsagy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //make intent to move us from this activity to mahmoud activity
+                Intent mahmoud = new Intent(MainActivity.this, mahmoud_activity.class);
+
+                //start  mahmoud activity
+
+                startActivity(mahmoud);
+            }
+        });
     }
     ////////////////////////////////////////////////////////////////////////////
 
@@ -126,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
         Intent inten = new Intent (this,RehamActivity.class);
         startActivity(inten);
     }
+
+
 
     }
 

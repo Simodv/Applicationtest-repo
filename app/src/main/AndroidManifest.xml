@@ -20,7 +20,8 @@
         <activity android:name=".TahanyActivity" />
         <activity android:name=".YasserActivity" />
         <activity android:name=".RehamActivity" />
-        <activity android:name=".ObidaActivity"></activity>
+        <activity android:name=".ObidaActivity" />
+        <activity android:name=".mahmoud_activity"></activity>
     </application>
 
 </manifest>

@@ -93,7 +93,7 @@
         tools:layout_editor_absoluteY="112dp" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button_El_jawsagy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button7"
